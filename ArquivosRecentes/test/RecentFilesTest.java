@@ -17,4 +17,5 @@ class RecentFilesTest {
 		assertEquals(1, lista.getLista().size());
 		
 	}
+	
 }

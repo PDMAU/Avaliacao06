@@ -12,4 +12,9 @@ public class RecentFiles {
 	public List<String> getLista(){
 		return this.lista;
 	}
+	
+	public void adicionarArquivo(String fileName) {
+		this.lista.add(fileName);
+	}
+	
 }
