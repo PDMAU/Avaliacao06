@@ -18,4 +18,14 @@ class RecentFilesTest {
 		
 	}
 	
+	@Test
+	public void quandoArquivoEhAdicionadoDeveIrParaOTopoDalista() {
+		RecentFiles lista = new RecentFiles();
+		lista.adicionarArquivo("ArquivoVelho.txt");
+		lista.adicionarArquivo("NovoArquivo.txt");
+		
+		assertTrue(lista.getLista().get(0).equals("NovoArquivo.txt"));
+		
+	}
+	
 }
