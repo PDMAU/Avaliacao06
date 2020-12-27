@@ -13,8 +13,8 @@ public class RecentFiles {
 		return this.lista;
 	}
 	
-	public void adicionarArquivo(String fileName) {
-		this.lista.add(fileName);
+	public void adicionarArquivo(String fileName) {		
+		this.lista.add(0, fileName);
 	}
 	
 }
