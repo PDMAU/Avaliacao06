@@ -28,4 +28,17 @@ class RecentFilesTest {
 		
 	}
 	
+	@Test
+	public void quandoArquivoEhAdicionadoSeJaExisteNaoDeveDuplicar() {
+		RecentFiles lista = new RecentFiles();
+		lista.adicionarArquivo("ArquivoVelho.txt");
+		lista.adicionarArquivo("NovoArquivo.txt");
+		lista.adicionarArquivo("ArquivoVelho.txt");
+		
+		assertTrue(lista.getLista().get(0).equals("ArquivoVelho.txt"));
+		assertEquals(2, lista.getLista().size());
+
+		
+	}
+	
 }
