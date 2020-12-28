@@ -36,5 +36,10 @@ public class RecentFiles {
 		this.habilitada = false;
 	}
 	
+	public void habilitar() {
+		this.habilitada = true;
+	}
+	
+	
 }
  

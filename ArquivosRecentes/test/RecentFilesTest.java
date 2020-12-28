@@ -86,7 +86,7 @@ class RecentFilesTest {
 		lista.habilitar();
 		lista.adicionarArquivo("Arquivo3.txt");
 		assertTrue(lista.getLista().get(0).equals("Arquivo3.txt"));
-		assertEquals(2, lista.getLista().size());
+		assertEquals(3, lista.getLista().size());
 	}
 	
 	
