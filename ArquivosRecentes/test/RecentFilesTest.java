@@ -76,5 +76,18 @@ class RecentFilesTest {
 		assertEquals(2, lista.getLista().size());
 	}
 	
+	@Test
+	public void quandoListaEstaHabilitadaDeveSerAdicionadosNovosArquivos() {
+		RecentFiles lista = new RecentFiles();
+		lista.adicionarArquivo("Arquivo0.txt");
+		lista.adicionarArquivo("Arquivo1.txt");
+		lista.desabilitar();		
+		lista.adicionarArquivo("Arquivo2.txt");
+		lista.habilitar();
+		lista.adicionarArquivo("Arquivo3.txt");
+		assertTrue(lista.getLista().get(0).equals("Arquivo3.txt"));
+		assertEquals(2, lista.getLista().size());
+	}
+	
 	
 }
