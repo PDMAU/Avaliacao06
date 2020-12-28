@@ -25,5 +25,9 @@ public class RecentFiles {
 		this.lista.add(0, fileName);
 	}
 	
+	public void esvaziar() {
+		this.lista.clear();
+	}
+	
 }
  
