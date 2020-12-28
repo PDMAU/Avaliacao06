@@ -49,7 +49,7 @@ class RecentFilesTest {
 		}
 		
 		assertTrue(lista.getLista().get(0).equals("Arquivo15.txt"));
-		assertTrue(lista.getLista().get(15).equals("Arquivo1.txt"));
+		assertTrue(lista.getLista().get(14).equals("Arquivo1.txt"));
 		
 	}
 	
