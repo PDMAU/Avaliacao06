@@ -53,4 +53,17 @@ class RecentFilesTest {
 		
 	}
 	
+	@Test
+	public void quandoListaEhEsvaziadaDeveFicarVazia() {
+		RecentFiles lista = new RecentFiles();
+		for(int i = 0; i <= 15; i++) {
+			lista.adicionarArquivo("Arquivo"+i+".txt");
+		}
+		lista.esvaziar();
+		assertEquals(0, lista.getLista().size());
+		
+		
+	}
+	
+	
 }
