@@ -41,4 +41,16 @@ class RecentFilesTest {
 		
 	}
 	
+	@Test
+	public void quandoListaEstaCheiaDeveRetirarUltimoElementoEAdicionarONovo() {
+		RecentFiles lista = new RecentFiles();
+		for(int i = 0; i <= 15; i++) {
+			lista.adicionarArquivo("Arquivo"+i+".txt");
+		}
+		
+		assertTrue(lista.getLista().get(0).equals("Arquivo15.txt"));
+		assertTrue(lista.getLista().get(15).equals("Arquivo1.txt"));
+		
+	}
+	
 }

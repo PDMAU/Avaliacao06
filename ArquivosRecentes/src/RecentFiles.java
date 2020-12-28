@@ -4,7 +4,7 @@ import java.util.List;
 public class RecentFiles {
 	
 	private List<String> lista;
-	
+
 	
 	public RecentFiles() {
 		this.lista = new ArrayList<String>();
